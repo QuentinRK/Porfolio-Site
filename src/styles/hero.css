@@ -1,0 +1,15 @@
+.hero {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; 
+    height: 50rem;
+    color: white;
+  }
+  
+.hero-container {
+    background-image: url('../images/coding-photo.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  

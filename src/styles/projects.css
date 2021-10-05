@@ -1,0 +1,14 @@
+.projects-container {
+    justify-content: center;
+
+    
+  }
+  
+  .projects-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 24rem));
+    justify-content: center;
+    grid-gap: 2rem;
+    margin-left: 3rem;
+  }
+  

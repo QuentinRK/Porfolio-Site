@@ -1,17 +1,16 @@
 import React from 'react'
-import Project from './Project.js'
+import Card from './Card.js'
 import SectionHeader from './SectionHeader.js'
+import '../styles/projects.css'
 
-const Projects = () => {
-    // Opportunity to 
-    
+const Projects = () => {    
     return (
         <div className="projects-container">
             <SectionHeader title="Project"/>
             <div className="projects-card-container">
-            <Project name="Project1" projectName="Project1 Name"/>
-            <Project name="Project2" projectName="Project2 Name"/>
-            <Project name="Project3" projectName="Project3 Name"/>
+            <Card name="Project1" projectName="Project1 Name"/>
+            <Card name="Project2" projectName="Project2 Name"/>
+            <Card name="Project3" projectName="Project3 Name"/>
             </div>
         </div>
     )

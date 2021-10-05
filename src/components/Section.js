@@ -1,5 +1,6 @@
 import React from 'react'
 import SectionHeader from './SectionHeader'
+import '../styles/section.css'
 
 const Section = () => {
     return (

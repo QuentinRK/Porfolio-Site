@@ -1,4 +1,4 @@
-import './index.css';
+import './global.css';
 import React from 'react'
 import Header from './components/Header.js'
 import Home from './components/Home.js'
