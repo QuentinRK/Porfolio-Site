@@ -8,7 +8,9 @@
     margin: 5rem;
     color: $primary-color;
 
-
+    form label {
+        font-size: 1.3rem;
+    }
     #message, #name, #email {
         display: flex;
         border-radius: .2rem;
