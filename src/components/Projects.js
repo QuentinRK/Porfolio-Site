@@ -1,10 +1,12 @@
 import React from 'react'
 import Card from './Card.js'
+import Fade from 'react-reveal/Fade';
 import SectionHeader from './SectionHeader.js'
 import '../styles/projects.scss'
 
 const Projects = () => {    
     return (
+        <Fade left>
         <div className="projects-container" id="projects">
             <SectionHeader title="Projects"/>
             <div className="projects-card-container">
@@ -14,6 +16,7 @@ const Projects = () => {
             <Card name="Project4" projectName="Project4 Name"/>
             </div>
         </div>
+        </Fade>
     )
 }
 

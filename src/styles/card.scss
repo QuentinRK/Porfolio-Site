@@ -46,8 +46,7 @@
 
     .description-tag {
         margin-right: auto;
-        margin-top: 6rem;
-        padding: .2rem;
+        margin-top: auto;
         font-size: .8rem;
         border-radius: 10px 10px 0 0;
         background:#E73739;
@@ -55,11 +54,6 @@
 
     hr {
         color:white;
-    }
-
-    .project-description {
-        margin: auto;
-    
     }
 
     .btn {
@@ -73,6 +67,7 @@
         border: solid 3px white;
         color: $primary-color;
         transition: all 200ms ease-in-out;
+        cursor: pointer;
 
         &:hover {
             background:#e7373a94;
