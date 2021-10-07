@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/sectionHeader.css'
+import '../styles/sectionHeader.scss'
 
 const SectionHeader = ({ title }) => {
     return (

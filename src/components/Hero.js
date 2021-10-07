@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/hero.css'
+import '../styles/hero.scss'
 const Hero = ({ name, job }) => {
     return (
         <div className="hero-container"> 
