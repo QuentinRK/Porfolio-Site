@@ -8,12 +8,33 @@
     margin: 5rem;
     color: $primary-color;
 
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .error-response, .success-response {
+        padding: 1rem;
+        border-radius: 2rem;
+        transition: all 1s ease-in-out;
+    }
+
+    .error-response {
+        background-color: red;
+    }
+
+    .success-response {
+        background-color: green;
+    }
+
     form label {
         font-size: 1.3rem;
     }
+
     #message, #name, #email {
         display: flex;
         border-radius: .2rem;
+        text-align: left;
         width: 40rem;
         font-size: 1rem;
         padding: .5rem;
@@ -29,12 +50,15 @@
     }
 
     .btn {
-        background: #9C2E8F ;
+        background: #9C2E8F;
+        margin-bottom: 2rem;
         border: none;
         padding: 1rem;
         border-radius: 1rem;
+        width: 9rem;
         color: $primary-color;
-        // margin-left: 32rem;
+        cursor: pointer;
+        align-self: flex-end;
         
     }
 }
@@ -43,8 +67,10 @@
 
 
     .contact-container {
+
         #message, #name, #email {
-            width: 20rem;
+            width: 22.5rem;
         }
+
     }
 }

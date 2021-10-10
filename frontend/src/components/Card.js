@@ -12,7 +12,7 @@ const Card = ({ name, description, link}) => {
         <hr/>
         <p className="project-description">{ description }</p>
         <a href={ link } className="btn">
-            View { name }
+            View
         </a>
         </div>
         </div>

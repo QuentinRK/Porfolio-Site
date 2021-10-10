@@ -3,13 +3,9 @@ import Card from './Card.js'
 import Fade from 'react-reveal/Fade';
 import SectionHeader from './SectionHeader.js'
 import '../styles/projects.scss'
-import axios from 'axios';
+import { request } from './Request'
 
 const Projects = () => {    
-    const request = axios.create({
-        baseURL: "http://127.0.0.1:8000/api"
-    })
-
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {

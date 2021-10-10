@@ -2,15 +2,12 @@ import React, { useEffect, useState } from 'react';
 import Bounce from 'react-reveal/Bounce';
 import SectionHeader from './SectionHeader'
 import '../styles/section.scss'
-import axios from 'axios';
+import { request} from './Request'
 
 const Section = () => {
 
     const [bio, setBio] = useState()  
-    const request = axios.create({
-            baseURL: "http://127.0.0.1:8000/api"
-    })
-    
+
     useEffect(() => {
 
         const getBio = async () =>{
