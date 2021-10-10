@@ -1,9 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Bounce from 'react-reveal/Bounce';
 import SectionHeader from './SectionHeader'
 import '../styles/section.scss'
+import axios from 'axios';
 
 const Section = () => {
+
+    const [bio, setBio] = useState()  
+    const request = axios.create({
+            baseURL: "http://127.0.0.1:8000/api"
+    })
+    
+    useEffect(() => {
+
+        const getBio = async () =>{
+
+            await request.get('about-me')
+                .then(res => {
+                    setBio(res.data[0].bio)
+                })
+        }
+
+        getBio()
+    }, [bio])
 
     return (
 
@@ -13,7 +32,7 @@ const Section = () => {
         <SectionHeader title="About Me"/>
         <div className="section-content">
 
-        <p className="aboutme-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam asperiores explicabo veritatis ut, repudiandae id necessitatibus quod qui excepturi voluptates modi recusandae laudantium magnam illum sit quisquam impedit rem, beatae a! Aut velit iusto quis, quas maxime voluptates ipsum tenetur et perspiciatis modi impedit repellat repellendus debitis expedita, id accusamus!</p>
+        <p className="aboutme-text">{bio}</p>
         </div>
         </Bounce>
         </div>

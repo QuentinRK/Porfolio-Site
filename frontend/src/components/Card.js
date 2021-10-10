@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/card.scss'
 
-const Card = ({ name, projectName}) => {
+const Card = ({ name, description, link}) => {
     return (
         <div className="card">
         <div className="card-container">
@@ -10,10 +10,10 @@ const Card = ({ name, projectName}) => {
 
         <h3 className="description-tag">Description</h3>
         <hr/>
-        <p className="project-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-        <button className="btn">
-            View
-        </button>
+        <p className="project-description">{ description }</p>
+        <a href={ link } className="btn">
+            View { name }
+        </a>
         </div>
         </div>
     )
