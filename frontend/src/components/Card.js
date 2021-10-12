@@ -11,7 +11,7 @@ const Card = ({ name, description, link}) => {
         <h3 className="description-tag">Description</h3>
         <hr/>
         <p className="project-description">{ description }</p>
-        <a href={ link } className="btn">
+        <a href={ link }  target="_blank" rel="noreferrer" className="btn">
             View
         </a>
         </div>

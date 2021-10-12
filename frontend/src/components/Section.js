@@ -14,7 +14,12 @@ const Section = () => {
 
             await request.get('about-me')
                 .then(res => {
-                    setBio(res.data[0].bio)
+                    console.log(res)
+                    if (res.data.length > 0){
+                        
+                        setBio(res.data[0].bio)
+                    }
+
                 })
         }
 

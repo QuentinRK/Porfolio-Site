@@ -8,9 +8,10 @@ const Footer = () => {
     return (
         <div className="footer-container">
         <ul className="social-media">
-        <Linkedin id="linkedin"/>
-        <Github id="github"/>
-        <Mail id="Mail"/>
+
+        <a href="https://www.linkedin.com/in/quentin-rankin" target="_blank" rel="noreferrer" ><Linkedin id="linkedin"/></a>
+        <a href="https://github.com/QuentinRK" target="_blank" rel="noreferrer" ><Github id="github"/></a>
+        <a href="mailto:q.rankin@outlook.com"><Mail id="Mail"/></a>
         </ul>
         </div>
     )
