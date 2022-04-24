@@ -10,4 +10,6 @@ RUN npm install
 RUN npm install react-scripts@3.4.1 -g
 RUN npx browserslist@latest --update-db
 COPY . .
+
+ARG CACHEBUST=1 
 RUN npm run build

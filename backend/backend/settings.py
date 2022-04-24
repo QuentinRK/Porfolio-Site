@@ -28,7 +28,9 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = int(os.environ.get("DEBUG", default=0))
 
-ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(";")
+ALLOWED_HOSTS = [
+    "localhost"
+]
 
 # Application definition
 
@@ -138,11 +140,17 @@ STATIC_ROOT = os.path.join(BASE_DIR,'django_static')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+CORS_ORIGIN_ALLOW_ALL = False
 
-CORS_ALLOWED_ORIGINS = [
+CORS_ALLOWED_WHITELIST = [
     'http://127.0.0.1',
     'http://127.0.0.1:80',
     'http://localhost',
+    'https://127.0.0.1',
+    'https://127.0.0.1:80',
+    'https://localhost',
+    'https://qrankin.com',
+    'https://178.79.131.46'
     
 ]
 
