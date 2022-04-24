@@ -8,7 +8,7 @@ const Home = () => {
     
     return (
         <div>
-        <Hero name="Quentin" job="Software Engineer"/>
+        <Hero name="QuentinR" job="Software Engineer"/>
         <div className="home-container">
         <Section/>
         <Projects/>
