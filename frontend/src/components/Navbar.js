@@ -2,6 +2,7 @@ import React, { useState, useEffect} from 'react'
 import { Link, useLocation } from 'react-router-dom'; 
 import { animateScroll as scroll } from 'react-scroll';
 import {FaBars, FaTimes} from 'react-icons/fa';
+import logo from '../images/main_logo.png'
 import '../styles/navbar.scss'
 
 const Header = () => {
@@ -30,7 +31,7 @@ const Header = () => {
 
     return (
         <>
-        <h1 className="title" onClick={scrollTop}>My First React App</h1>
+        <div className="logo" onClick={scrollTop}><img src={ logo} alt="Logo" style={{"width": "4.5rem"}}/></div>
 
         { showMenu ? <FaTimes className="mobileIcons" onClick={() => {setShowMenu(!showMenu)}}/> : <FaBars className="mobileIcons" onClick={() => {setShowMenu(!showMenu)}}/> }
             <ul className={showMenu ? "navbar-items active": "navbar-items"} id="navbar-items">
