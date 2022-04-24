@@ -10,7 +10,6 @@ const Hero = ({ name, job }) => {
         <Fade left>
         <h1>{name}</h1>    
         <h3>{job}</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, perferendis.</p>
         </Fade>
         </article>            
         </div>
